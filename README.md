@@ -2,12 +2,22 @@
 
 Local prototype: use a Mac mouse to move a pointer on an Android phone’s own screen. Android 8 or later. No root or USB debugging required for normal use.
 
+## Downloads
+
+Get the Android APK and Mac app ZIP from the [latest release](https://github.com/stevie1mat/MacMouseDroid/releases/latest). Extract the ZIP before opening the Mac app.
+
+## Design preview
+
+![Android setup and sharing design preview](docs/images/android-design-preview.png)
+
+Design concept for the Android interface, not a device screenshot. The implementation may differ in spacing and controls.
+
 ## Run
 
-1. Install `dist/MouseForMobile.apk` on the phone.
+1. Download `MouseForMobile.apk` from Releases and install it on the phone.
 2. Open Mouse for Mobile and enable its Accessibility service. For sideloaded apps, Android may require App info → menu → Allow restricted settings first.
 3. Put both devices on the same trusted Wi-Fi, and tap **Start sharing** on the phone.
-4. Open `dist/Mouse for Mobile.app` on the Mac. Enter the phone’s IPv4 address (including `:8765`) and pairing code.
+4. Download and extract `MouseForMobile-macOS.zip`, then open `Mouse for Mobile.app` on the Mac. Enter the phone’s IPv4 address (including `:8765`) and pairing code.
 5. Click **Control phone**. Look at the phone and move your Mac mouse. Escape releases it; switching away from the Mac window also releases it.
 6. Tap **Stop sharing** on the phone when finished. Releasing the Mac mouse does not stop phone sharing.
 
